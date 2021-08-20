@@ -1,0 +1,18 @@
+.page-content{
+    padding: 10px;
+}
+.action{
+    display: flex;
+    align-content: center;
+    justify-content: flex-end;
+}
+.image-parent{
+    width: 70px;
+    height: 70px;   
+    border-radius: 50%;
+    overflow: hidden;
+}
+.page-image{
+    display: block;
+    height: 100%;
+}

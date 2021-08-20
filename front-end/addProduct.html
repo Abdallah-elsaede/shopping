@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/header.css">
+    <title>Shopping - Add Product</title>
+    
+    <style>
+        .form{
+            width: 45%;
+            margin: auto;
+            min-width: 350px;
+            background-color: #eee;
+            padding: 11px;
+            border-radius: 7px;
+        }
+        .full-width{
+            display: block;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="header">
+            <div class="logo">
+                <span class="my">My</span>
+                <span class="Shopping">Shopping.com</span>
+            </div>
+            <div class="routes-actions">
+                <span id="routes"></span>
+                <button onclick="logOut()" class="logout"><i class="fa fa-sign-out"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-content">
+        <div class="form">
+            <h2 class="h2 text-center">Add Product</h2>
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Product name">
+            </div>
+            <div class="mb-3">
+                <label for="price" class="form-label">Price</label>
+                <input type="number" class="form-control" id="price" placeholder="0.00">
+            </div>
+            <div class="mb-3">
+                <label for="image" class="form-label">Image URL</label>
+                <input type="url" class="form-control" id="image" placeholder="https://google/photos/324m4">
+            </div>
+            <div class="mb-3">
+                <label for="url" class="form-label">WebSite URL</label>
+                <input type="url" class="form-control" id="url" placeholder="https://google/photos/324m4">
+            </div>
+            <div class="mb-3">
+                <label for="description" class="form-label">Description</label>
+                <textarea class="form-control" id="description" rows="3"></textarea>
+            </div>
+            <button type="button" onclick="addProduct();" class="btn btn-success full-width">Add Product</button>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/userStatus.js"></script>
+    <script src="js/addProduct.js"></script>
+    
+</body>
+
+</html>

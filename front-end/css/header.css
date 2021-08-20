@@ -1,0 +1,40 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    background-color: #673ab7;
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    color: #f3f3f3;
+    font-family: monospace;;
+}
+.logo{
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 15px;
+    display: flex;
+    align-items: flex-end;
+}
+.logo .my{
+    color: #52fb59;
+}
+.logo .Shopping{
+    color: #ffeb3b;
+    font-size: 14px;
+}
+
+.logout{
+    background: transparent;
+    color: #fff;
+    border: none;
+    font-size: 22px;
+    float: right;
+    margin-top: 6px;
+}

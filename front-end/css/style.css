@@ -1,0 +1,16 @@
+.page-content{
+    padding: 10px;
+}
+
+.form{
+    width: 45%;
+    margin: auto;
+    min-width: 350px;
+    background-color: #eee;
+    padding: 11px;
+    border-radius: 7px;
+}
+.full-width{
+    display: block;
+    width: 100%;
+}
