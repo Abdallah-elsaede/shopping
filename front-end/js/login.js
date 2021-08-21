@@ -48,16 +48,3 @@ window.onload = () => {
         location.href = 'admin.html';
     }
 };
-
-//abdallah_moatafa
-//fnLygeRqvh5hRPhI
-
-//location.href.substring(0,location.href.lastIndexOf('/'))+'/'
-
-// Abdallah-elsaede
-// abdallahmostapha957
-// abdallahmostapha957@gmail.com
-
-//heroku
-// abdallahmostapha957@gmail.com
-// abdallah@1622002
