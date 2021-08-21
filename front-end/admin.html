@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/header.css">
+    <title>Shopping - home</title>
+</head>
+
+<body>
+    <div>
+        <div class="header">
+            <div class="logo">
+                <span class="my">My</span>
+                <span class="Shopping">Shopping.com</span>
+            </div>
+            <div class="routes-actions">
+                <span id="routes"></span>
+                <button onclick="logOut()" class="logout"><i class="fa fa-sign-out"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-content">
+        <h1 class="h1 text-center">Your Pages</h1>
+        <div class="action">
+            <button type="button" onclick="location.href='addPage.html';" class="btn btn-primary">Add New Page</button>
+        </div>
+        <div>
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Image</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Description</th>
+                    <th scope="col">Action</th>
+                  </tr>
+                </thead>
+                <tbody id="TableData">
+                </tbody>
+              </table>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/userStatus.js"></script>
+    <script src="js/index.js"></script>
+    
+</body>
+
+</html>

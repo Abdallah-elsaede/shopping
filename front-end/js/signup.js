@@ -25,7 +25,7 @@ signup.onclick = (e) => {
     if(error == ''){
         $.ajax({
             method: "POST",
-            url: 'http://localhost:3000/user/signup',
+            url: '/user/signup',
             data: signupData
         })
             .done(function (data) {
@@ -46,6 +46,6 @@ signup.onclick = (e) => {
 window.onload = () => {
     const token = localStorage.getItem('token');
     if (token != '' && token != null && token != undefined) {
-        location.href = 'index.html';
+        location.href = 'admin.html';
     }
 };

@@ -22,7 +22,7 @@ signin.onclick = (e) =>{
     if(error == ''){
         $.ajax({
             method: "POST",
-            url: 'http://localhost:3000/user/login',
+            url: '/user/login',
             data: signinData
         })
         .done(function( data ) {
@@ -31,7 +31,7 @@ signin.onclick = (e) =>{
                 localStorage.setItem('token' , data['token']);
                 localStorage.setItem('infos' , JSON.stringify(data['data']));
                 
-                location.href = 'index.html';
+                location.href = 'admin.html';
 
             } else {
                 alert(data['error']);
@@ -45,7 +45,7 @@ signin.onclick = (e) =>{
 window.onload = () => {
     const token = localStorage.getItem('token');
     if(token != '' && token != null && token != undefined){
-        location.href = 'index.html';
+        location.href = 'admin.html';
     }
 };
 

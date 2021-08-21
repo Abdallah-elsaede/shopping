@@ -5,7 +5,7 @@ window.onload = ()=>{
 function getData(){
     $.ajax({
         method: "GET",
-        url: `http://localhost:3000/product/all/${localStorage.getItem('pageId')}`,
+        url: `/product/all/${localStorage.getItem('pageId')}`,
       })
         .done(function( data ) {
             if(data['status'] === "done"){
@@ -48,7 +48,7 @@ function deleteItem(_id) {
     let token = localStorage.getItem('token');
     $.ajax({
         method: "POST",
-        url: 'http://localhost:3000/product/update',
+        url: '/product/update',
         data: {_id : _id , deleted : true},
         headers: {
             'Authorization': `Bearer ${token}`,

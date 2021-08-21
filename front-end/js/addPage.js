@@ -12,7 +12,7 @@ function addPage(){
     console.log(token , 'token');
     $.ajax({
         method: "POST",
-        url: 'http://localhost:3000/page/new',
+        url: '/page/new',
         data: addPagepData,
         headers: {
             'Authorization': `Bearer ${token}`,
@@ -23,7 +23,7 @@ function addPage(){
             console.log(data , 'data');
             if(data['status'] === "done"){
                 alert('The Page has been add');
-                location.href = 'index.html';
+                location.href = 'admin.html';
 
             } else {
                 alert(data['error']);

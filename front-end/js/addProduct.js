@@ -18,7 +18,7 @@ function addProduct(){
     console.log(token , 'token');
     $.ajax({
         method: "POST",
-        url: 'http://localhost:3000/product/new',
+        url: '/product/new',
         data: addPagepData,
         headers: {
             'Authorization': `Bearer ${token}`,

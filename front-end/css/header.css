@@ -30,7 +30,7 @@ body{
     font-size: 14px;
 }
 
-.logout{
+.logout , .menu-btn{
     background: transparent;
     color: #fff;
     border: none;
