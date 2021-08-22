@@ -38,3 +38,6 @@ body{
     float: right;
     margin-top: 6px;
 }
+a{
+    text-decoration: none;
+}
