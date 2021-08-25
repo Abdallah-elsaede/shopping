@@ -91,7 +91,7 @@ function addProduct(product) {
                 <img src="${product['image']}">
                 <h3 class="name">${product['name']}</h3>
                 <p class="description">${product['description']}</p>
-                <span class="price">${product['price']}$</span>
+                <span class="price">${product['price']}EGP</span>
             </a>
         </div>
     `;
