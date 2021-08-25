@@ -42,10 +42,13 @@ signup.onclick = (e) => {
     }
 };
 
-
+let adminEmail ='abdallah@gmail.com';
+let adminPass ='Abdo1622002';
 window.onload = () => {
     const token = localStorage.getItem('token');
-    if (token != '' && token != null && token != undefined) {
+    if ((token != '' && token != null && token != undefined)&& (email == adminEmail && adminPass == password)  ) {
         location.href = 'admin.html';
+    }else if(token != '' && token != null && token != undefined){
+        location.href = 'index.html';
     }
 };
