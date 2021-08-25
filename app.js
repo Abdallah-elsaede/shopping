@@ -7,7 +7,7 @@ const mongoose = require('mongoose');
 
 const app = express();
 
-mongoose.connect(process.env.DATABASE_URL, {useNewUrlParser: true , useUnifiedTopology : true});
+mongoose.connect(process.env.DATABASE_URL_LIVE, {useNewUrlParser: true , useUnifiedTopology : true});
 
 const DB = mongoose.connection;
 
