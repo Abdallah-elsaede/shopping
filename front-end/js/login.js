@@ -45,6 +45,6 @@ signin.onclick = (e) =>{
 window.onload = () => {
     const token = localStorage.getItem('token');
     if(token != '' && token != null && token != undefined){
-        location.href = 'admin.html';
+        location.href = 'index.html';
     }
 };
