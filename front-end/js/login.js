@@ -31,7 +31,7 @@ signin.onclick = (e) =>{
                 localStorage.setItem('token' , data['token']);
                 localStorage.setItem('infos' , JSON.stringify(data['data']));
                 
-                location.href = 'admin.html';
+                location.href = 'index.html';
 
             } else {
                 alert(data['error']);
